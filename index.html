@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-accordion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { 
+                Wsans : ["Work Sans", "Arial"]
+            },
+
+            colors: {
+                darkppl:"#301534",
+                pink: "#AD28EB",
+                lightpink: "#F8EEFF",
+                paleppl: "#8B6990",
+                white: "#FFFFFF",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .accordio-description {
+          max-height: 0;
+          overflow: hidden;
+          
+      }
+      
+    </style>
+
+</head>
+<body class="bg-lightpink font-Wsans">
+    <header class="bg-[url('images/background.png')] lg:bg-cover bg-no-repeat bg-center h-[232px] lg:h-[320px] "></header>
+    <main class="flex justify-center relative top-[-142.5px] pb-[10%] lg:top-[-167.5px] ">
+      <div class="w-[327px] lg:w-[650px]  bg-white rounded-lg ">
+          <div class="flex items-center gap-6 p-6 ">
+              <img src="images/ph_star-four-fill.png" alt="star" class="w-6 lg:w-10">
+              <h1 class="font-bold text-3xl lg:text-6xl">FAQs</h1>
+          </div>
+          <div class="mb-6">
+            <div class="accordion-item mt-6 lg:mt-8 px-6 lg:mx-12">
+              <button class="accordion-btn flex gap-6  my-5 lg:my-7">
+                <p class="font-semibold text-4 text-left lg:text-[18px] w-[224px] lg:w-[449px]">What is Frontend Mentor, and how will it help me?</p>
+                <div class="icon">
+                  <img class="minus-icon w-[30px] h-[30px]" src="images/moin.png" alt="moin">
+                  <img class="plus-icon w-[30px] h-[30px]" src="images/plus.png" alt="plus">
+                </div>
+              </button>
+              <div class="accordio-description ">
+                <p class="text-paleppl text-[14px] lg:text-paleppl lg:text-[18px] mb-8">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                  all levels and ideal for portfolio building.</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-lightpink w-full"></div>
+            <div class="accordion-item mt-6 lg:mt-8 px-6 lg:mx-12">
+              <button class="accordion-btn flex gap-6  my-5 lg:my-7">
+                <p class="font-semibold text-4 text-left lg:text-[18px] w-[224px] lg:w-[449px] ">Is Frontend Mentor free?</p>
+                <div class="icon">
+                  <img class="minus-icon w-[30px] h-[30px]" src="images/moin.png" alt="moin">
+                  <img class="plus-icon w-[30px] h-[30px]" src="images/plus.png" alt="plus">
+                </div>
+              </button>
+              <div class="accordio-description ">
+                <p class="text-paleppl text-[14px] lg:text-paleppl lg:text-[18px] mb-8">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                  all levels and ideal for portfolio building.</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-lightpink w-full"></div>
+            <div class="accordion-item mt-6 lg:mt-8 px-6 lg:mx-12">
+              <button class="accordion-btn flex gap-6  my-5 lg:my-7 ">
+                <p class="font-semibold text-left text-4 lg:text-[18px] w-[224px] lg:w-[449px]">Can I use Frontend Mentor projects in my portfolio?</p>
+                <div class="icon">
+                  <img class="minus-icon w-[30px] h-[30px]" src="images/moin.png" alt="moin">
+                  <img class="plus-icon w-[30px] h-[30px]" src="images/plus.png" alt="plus">
+                </div>
+              </button>
+              <div class="accordio-description ">
+                <p class="text-paleppl text-[14px] lg:text-paleppl lg:text-[18px] mb-8">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                  all levels and ideal for portfolio building.</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-lightpink w-full"></div>
+
+            <div class="accordion-item mt-6 lg:mt-8 px-6 lg:mx-12">
+              <button class="accordion-btn flex gap-6  my-5 lg:my-7">
+                <p class="font-semibold text-4 text-left lg:text-[18px] w-[224px] lg:w-[450px]">How can I get help if I'm stuck on a challenge?</p>
+                <div class="icon">
+                  <img class="minus-icon w-[30px] h-[30px]" src="images/moin.png" alt="moin">
+                  <img class="plus-icon w-[30px] h-[30px]" src="images/plus.png" alt="plus">
+                </div>
+              </button>
+              <div class="accordio-description ">
+                <p class="text-paleppl text-[14px] lg:text-paleppl lg:text-[18px] mb-8">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                  all levels and ideal for portfolio building.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </main>
+    <script src="./script.js"></script>
+</body>
+</html>
